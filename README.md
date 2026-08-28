@@ -51,7 +51,7 @@ picosoc-rtl-to-gds/
 ## 📊 Project Presentation
 
 View the full presentation covering methodology, flow, and results:
-[last_Presentation.pptx](docs/last_Presentation.pptx)
+[last_presentation.pptx](docs/last_presentation.pptx)
   
 ## About Me
 
