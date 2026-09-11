@@ -1,0 +1,99 @@
+**WARN: (IMPREPO-207):	There are 1 Cells dimensions not multiple integer of site.
+
+**Info: (IMPSP-2062): Some of the PG shapes may not be colorized properly in this design, users are required to run command colorizePowerMesh before any placement related commands!
+Begin checking placement ... (start mem=7546.3M, init mem=6548.3M)
+*info: Recommended don't use cell = 0           
+*info: Placed = 20591          (Fixed = 8611)
+*info: Unplaced = 0           
+Placement Density:34.98%(216324/618297)
+Placement Density (including fixed std cells):38.23%(248806/650779)
+Finished checkPlace (total: cpu=0:00:00.5, real=0:00:00.0; vio checks: cpu=0:00:00.4, real=0:00:00.0; mem=6516.3M)
+Design: picosoc
+
+------ Design Summary:
+Total Standard Cell Number   (cells) : 20587
+Total Block Cell Number      (cells) : 4
+Total I/O Pad Cell Number    (cells) : 0
+Total Standard Cell Area     ( um^2) : 248806.05
+Total Block Cell Area        ( um^2) : 1527234.47
+Total I/O Pad Cell Area      ( um^2) : 0.00
+
+------ Design Statistics:
+
+Number of Instances            : 20591
+Number of Non-uniquified Insts : 20580
+Number of Nets                 : 15896
+Average number of Pins per Net : 3.08
+Maximum number of Pins in Net  : 76
+
+------ I/O Port summary
+
+Number of Primary I/O Ports    : 123
+Number of Input Ports          : 43
+Number of Output Ports         : 80
+Number of Bidirectional Ports  : 0
+Number of Power/Ground Ports   : 0
+Number of Floating Ports                     *: 0
+Number of Ports Connected to Multiple Pads   *: 0
+Number of Ports Connected to Core Instances   : 123
+**WARN: (IMPREPO-202):	There are 123 Ports connected to core instances.
+
+------ Design Rule Checking:
+
+Number of Output Pins connect to Power/Ground *: 0
+Number of Insts with Input Pins tied together ?: 20
+Number of TieHi/Lo term nets not connected to instance's PG terms ?: 0
+Number of Input/InOut Floating Pins            : 0
+Number of Output Floating Pins                 : 0
+Number of Output Term Marked TieHi/Lo         *: 0
+
+**WARN: (IMPREPO-216):	There are 20 Instances with input pins tied together.
+Number of nets with tri-state drivers          : 0
+Number of nets with parallel drivers           : 0
+Number of nets with multiple drivers           : 0
+Number of nets with no driver (No FanIn)       : 0
+Number of Output Floating nets (No FanOut)     : 2925
+Number of High Fanout nets (>50)               : 44
+**WARN: (IMPREPO-227):	There are 44 High Fanout nets (>50).
+**WARN: (IMPREPO-231):	Input netlist has a cell 'sky130_sram_2kbyte_1rw1r_32x512_8' which is marked dont_use in the library. This cell will not be used in timing optimization. Use set_dont_use command to change. Instances of this cell are : <output of dbGet top.insts.cell.name <the cell> -p2
+**WARN: (IMPREPO-231):	Input netlist has a cell 'sky130_sram_4kbyte_1rw1r_32x1024_8' which is marked dont_use in the library. This cell will not be used in timing optimization. Use set_dont_use command to change. Instances of this cell are : <output of dbGet top.insts.cell.name <the cell> -p2
+
+# Number of cells of input netlist marked dont_use = 2.
+
+**WARN: (IMPREPO-213):	There are 123 I/O Pins connected to Non-IO Insts.
+Checking for any assigns in the netlist...
+Assigns in module picorv32_ENABLE_COUNTERS1_BARREL_SHIFTER1_COMPRESSED_ISA1_ENABLE_MUL1_ENABLE_FAST_MUL0_ENABLE_DIV1_ENABLE_IRQ1_ENABLE_IRQ_QREGS0_PROGADDR_RESET1048576_PROGADDR_IRQ0_STACKADDR12288
+  FE_OFN79_iomem_wdata_25 mem_wdata[25]
+  No assigns found.
+Checking routing tracks.....
+Checking other grids.....
+Checking FINFET Grid is on Manufacture Grid.....
+
+Checking core/die box is on Grid.....
+
+Checking snap rule ......
+
+Checking Row is on grid......
+
+Checking AreaIO row.....
+Checking routing blockage.....
+Checking components.....
+Checking constraints (guide/region/fence).....
+Checking groups.....
+Checking Ptn Core Box.....
+
+Checking Preroutes.....
+No. of regular pre-routes not on tracks : 0 
+ Design check done.
+Report saved in file checkDesign/picosoc.main.htm.ascii
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPREPO-227          1  There are %d High Fanout nets (>50).     
+WARNING   IMPREPO-231          2  Input netlist has a cell '%s' which is m...
+WARNING   IMPREPO-202          1  There are %d Ports connected to core ins...
+WARNING   IMPREPO-207          1  There are %d Cells dimensions not multip...
+WARNING   IMPREPO-213          1  There are %d I/O Pins connected to Non-I...
+WARNING   IMPREPO-216          1  There are %d Instances with input pins t...
+*** Message Summary: 7 warning(s), 0 error(s)
+

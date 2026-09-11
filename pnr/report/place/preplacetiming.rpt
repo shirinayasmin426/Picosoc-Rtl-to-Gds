@@ -1,0 +1,53 @@
+*** timeDesign #2 [begin] () : totSession cpu/real = 1:11:42.4/3:49:20.0 (0.3), mem = 6045.5M
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Setting High Fanout Nets ( > 100 ) as ideal temporarily for -prePlace option
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+
+Starting delay calculation for Setup views
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=6009.33 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: picosoc
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in Single mode...
+Start delay calculation (fullDC) (8 T). (MEM=6009.33)
+siFlow : Timing analysis mode is single, using late cdB files
+Total number of fetched objects 14724
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+End delay calculation. (MEM=7054.83 CPU=0:00:02.1 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=5990.83 CPU=0:00:02.9 REAL=0:00:01.0)
+*** Done Building Timing Graph (cpu=0:00:04.6 real=0:00:01.0 totSessionCpu=1:11:48 mem=5990.8M)
+
+------------------------------------------------------------------
+          timeDesign Summary
+------------------------------------------------------------------
+
+Setup views included:
+ func_typical_0_1v8 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  1.021  |  1.021  |  7.323  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|  5062   |  5059   |  2349   |
++--------------------+---------+---------+---------+
+
+Density: 33.124%
+------------------------------------------------------------------
+Set Using Default Delay Limit as 1000.
+Resetting back High Fanout Nets as non-ideal
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Reported timing to dir ./timingReports
+Total CPU time: 5.95 sec
+Total Real time: 3.0 sec
+Total Memory Usage: 5989.316406 Mbytes
